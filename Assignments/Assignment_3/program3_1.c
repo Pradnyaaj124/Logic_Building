@@ -1,27 +1,31 @@
+// 1.Write a program which accept one number from user and print that number of even numbers on screen.
+
 #include<stdio.h>
 
-int Divide(int iNo1, int iNo2)
+void PrintEven(int iNo)
 {
-    int iAns = 0;
-
-    if(iNo2 == 0)
+    int iCnt = 0;
+    if(iNo <= 0)
     {
-        return -1;
+        return;
+    }
+    for(iCnt = 1; iCnt <= iNo; iCnt++ )
+    {
+        printf("%d\t", 2 * iCnt);
     }
 
-    iAns = iNo1 / iNo2;
-
-    return iAns;
+    
 }
 
 int main()
 {
-    int iValue1 = 15, iValue2 = 5;
-    int iRet = 0;
+    int iValue = 0;
 
-    iRet = Divide(iValue1, iValue2);
+    printf("Enter number\n");
 
-    printf("Division is %d", iRet);
+    scanf("%d",&iValue);
+
+    PrintEven(iValue);
 
     return 0;
 }
