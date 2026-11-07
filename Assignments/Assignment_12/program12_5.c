@@ -1,5 +1,6 @@
 /*
-Question 5: Write a program which accept number from user and count frequency of such a digits which are less than 6.
+Question 5: Write a program which accept number from user and count frequency 
+of such a digits which are less than 6.
 
 Input : 2395
 Output : 3
